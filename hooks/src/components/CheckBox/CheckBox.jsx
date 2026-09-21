@@ -7,6 +7,8 @@ function CheckBox({id, checked, onChange, label}) {
             checked={checked}
             onChange={(e) => onChange(e.target.checked)}
             />
-            <label >
-    )
+            <label htmlFor={id}>{label}</label>
+        </div>
+    );
 }
+export default CheckBox;
